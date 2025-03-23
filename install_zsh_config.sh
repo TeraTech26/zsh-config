@@ -32,8 +32,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/cu
 echo "⚙️ Configuration de ~/.zshrc..."
 cat > ~/.zshrc <<'EOF'
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="bira"
-plugins=(git sudo z autojump zsh-autosuggestions zsh-syntax-highlighting)
+# Pour Powerlevel10k
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(git sudo z autojump zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode fzf-tab zsh-completions)
 source $ZSH/oh-my-zsh.sh
 [[ -s /usr/share/autojump/autojump.zsh ]] && . /usr/share/autojump/autojump.zsh
 export EDITOR="nano"
