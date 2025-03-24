@@ -7,7 +7,7 @@ Ce dépôt contient une configuration Zsh personnalisée, avec des plugins et un
 1. **Cloner le dépôt** dans le répertoire des plugins d'Oh My Zsh :
 
    ```bash
-   git clone https://github.com/TeraTech26/zsh-config.git ~/.oh-my-zsh/custom/plugins/zsh-config
+   bash <(curl -fsSL https://raw.githubusercontent.com/TeraTech26/zsh-config/main/install_zsh_config.sh)
    ```
 
 2. **Exécuter le script d'installation** :
