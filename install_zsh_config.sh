@@ -9,6 +9,7 @@ rm -rf ~/.oh-my-zsh
 echo "📦 Installation de Oh My Zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
+
 echo "🔌 Installation des plugins personnalisés..."
 ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 # zsh-autosuggestions
@@ -28,6 +29,7 @@ git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugi
 
 # theme powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+
 
 echo "⚙️ Configuration de ~/.zshrc..."
 cat > ~/.zshrc <<'EOF'
