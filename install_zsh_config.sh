@@ -245,7 +245,7 @@ if sudo [ -w "$ALIASES_FILE" ]; then
     ## Pour ce qui est de la date et de l'heure
     
     # Afficher la date et l'heure
-    alias current_date="date '+On est le %d/%m/%Y. Et il est %H h %M m %S s.'"
+    alias date="date '+On est le %d/%m/%Y. Et il est %H h %M m %S s.'"
     
     # date complète
     alias datec='date "+%A %d %B %Y"'
