@@ -6,7 +6,8 @@ sudo apt update && sudo apt install -y zsh git curl autojump
 echo "💡 Suppression d'Oh My Zsh existant (si présent)..."
 rm -rf ~/.oh-my-zsh
 
-echo "📦 Installation de Oh My Zsh..."
+echo "📦 Installation de Zsh et de Oh My Zsh..."
+sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 
@@ -22,6 +23,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 git clone https://github.com/jeffreytse/zsh-vi-mode ~/.oh-my-zsh/custom/plugins/zsh-vi-mode
 
 # fzf-tab (nécessite que fzf soit déjà installé)
+sudo apt install fzf -y
 git clone https://github.com/Aloxaf/fzf-tab ~/.oh-my-zsh/custom/plugins/fzf-tab
 
 # zsh-completions
@@ -44,4 +46,6 @@ export VISUAL="nano"
 autoload -U compinit && compinit
 EOF
 
-echo "✅ Configuration terminée. Tu peux redémarrer ton terminal ou exécuter : source ~/.zshrc"
+source ~/.zshrc
+
+echo "✅ Configuration terminée. Lorsque tu modifie les paramètres de Oh My Zsh, tu peux redémarrer ton terminal ou exécuter : source ~/.zshrc"
