@@ -8,7 +8,7 @@ PLUGINS_DIR="$ZSH_CUSTOM/plugins"
 THEMES_DIR="$ZSH_CUSTOM/themes"
 
 # ─── OPTION POUR SAUVEGARDER LE MDP UTILISATEUR TEMPORAIREMENT ───────────────────
-echo "[*] Sauvegarde temporaire du mot de passe sudo..."
+echo "[*] Sauvegarde temporaire du mot de passe sudo pour faciliter l'installation..."
 sudo -v  # Demande le mot de passe sudo pour le rendre valide pendant un certain temps
 
 # ─── INSTALLATION DE ZSH ──────────────────────────────────────────────────────
