@@ -24,6 +24,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # ─── PLUGINS ──────────────────────────────────────────────────────────────────
 echo "[*] Installation des plugins..."
 
+which fzf || sudo apt install fzf -y
+
+which autojump || sudo apt install autojump -y
+
 # zsh-autosuggestions
 if [ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
