@@ -10,17 +10,7 @@ Ce dépôt contient une configuration Zsh personnalisée, avec des plugins et un
    bash <(curl -fsSL https://raw.githubusercontent.com/TeraTech26/zsh-config/main/install_zsh_config.sh)
    ```
 
-2. **Exécuter le script d'installation** :
-
-   Naviguer dans le dossier où tu as cloné le dépôt et exécuter le script :
-
-   ```bash
-   cd ~/.oh-my-zsh/custom/plugins/zsh-config
-   chmod +x install_zsh_config.sh
-   ./install_zsh_config.sh
-   ```
-
-3. **Recharger la configuration Zsh** :
+2. **Recharger la configuration Zsh** :
 
    Après l'installation, recharger ta configuration Zsh en exécutant :
 
