@@ -87,7 +87,7 @@ if [ -w "$ZSHRC" ]; then
     
     # Powerlevel10k config (optionnel)
     [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-    EOF
+EOF
 else
     echo "Le fichier $ZSHRC n'est pas accessible en écriture."
 fi
@@ -143,7 +143,7 @@ if [ -w "$ALIASES_FILE" ]; then
     alias datet="date '+%T'"
     alias edit="nano"
     alias gsave="git add . && git commit -m 'Auto save' && git push"
-    EOF
+EOF
 else
     echo "Le fichier $ALIASES_FILE n'est pas accessible en écriture."
 fi
