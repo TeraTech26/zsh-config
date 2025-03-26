@@ -2,6 +2,15 @@
 
 Ce dépôt contient une configuration Zsh personnalisée, avec des plugins et un thème pour Oh My Zsh.
 
+## Sommaire
+
+- [Installation](#installation)
+- [Précision importante](#précision-importante)
+- [Personnalisation](#personnalisation)
+- [Plugins inclus](#plugins-inclus)
+- [License](#license)
+
+
 ## Installation
 
 1. **Cloner le dépôt** dans le répertoire des plugins d'Oh My Zsh :
