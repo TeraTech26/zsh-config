@@ -8,7 +8,7 @@ Ce dépôt contient une configuration Zsh personnalisée, avec des plugins et un
 - [Précision importante](#précision-importante)
 - [Personnalisation](#personnalisation)
 - [Plugins inclus](#plugins-inclus)
-- [License](#license)
+- [Licence](#licence)
 
 
 ## Installation
