@@ -10,6 +10,7 @@ Ce dépôt contient une configuration Zsh personnalisée, avec des plugins et un
    bash <(curl -fsSL https://raw.githubusercontent.com/TeraTech26/zsh-config/main/install_zsh_config.sh)
    ```
 
+
 2. **Recharger la configuration Zsh** :
 
    Après l'installation, recharger ta configuration Zsh en exécutant :
@@ -17,6 +18,7 @@ Ce dépôt contient une configuration Zsh personnalisée, avec des plugins et un
    ```bash
    source ~/.zshrc
    ```
+
 
 ## Précision importante
 
@@ -185,10 +187,12 @@ alias edit="nano"
 alias gsave="git add . && git commit -m 'Auto save' && git push"
 ```
 
+
 ## Personnalisation
 
 - Tu peux personnaliser le fichier `~/.zshrc` pour changer le thème ou ajouter d'autres plugins.
 - Les plugins sont configurés dans le fichier `~/.zshrc` sous la section `plugins=()`.
+
 
 ## Plugins inclus
 
@@ -209,6 +213,7 @@ alias gsave="git add . && git commit -m 'Auto save' && git push"
 
 6. **zsh-syntax-highlighting**  
    Colorie et met en surbrillance la syntaxe des commandes pour détecter les erreurs avant leur exécution.
+
 
 
 ## Licence
