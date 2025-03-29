@@ -28,6 +28,10 @@ which fzf || sudo apt install fzf -y
 
 which autojump || sudo apt install autojump -y
 
+which wget || sudo apt install wget -y
+
+which curl || sudo apt install curl -y
+
 # zsh-autosuggestions
 if [ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
@@ -57,6 +61,31 @@ fi
 if [ ! -d "$THEMES_DIR/powerlevel10k" ]; then
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$THEMES_DIR/powerlevel10k"
 fi
+
+# ─── INSTALLATION DES POLICES POWERLEVEL10K ───────────────────────────────────
+echo "[*] Téléchargement et installation des polices MesloLGS NF..."
+
+FONT_DIR="${HOME}/.local/share/fonts"
+mkdir -p "$FONT_DIR"
+
+# Liens des polices
+FONT_URLS=(
+    "https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf"
+    "https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf"
+    "https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf"
+    "https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf"
+)
+
+for url in "${FONT_URLS[@]}"; do
+    filename=$(basename "$url")
+    wget -q "$url" -O "$FONT_DIR/$filename"
+done
+
+# Mettre à jour le cache des polices
+echo "[*] Mise à jour du cache des polices..."
+fc-cache -fv "$FONT_DIR"
+
+echo "✅ Polices MesloLGS NF installées. Pense à sélectionner 'MesloLGS NF' comme police dans ton terminal pour un affichage optimal de Powerlevel10k."
 
 # ─── FICHIER .ZSHRC ───────────────────────────────────────────────────────────
 
